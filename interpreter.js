@@ -20,7 +20,7 @@ class Interpreter {
     let shapes = [];
 
 
-    tree.children.forEach((statement) => {
+    tree.children?.forEach((statement) => {
       const shape = statement.children[0];
 
       const args = shape.children.slice(1).map((c) => parseInt(c.getText()));
